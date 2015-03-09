@@ -5,11 +5,35 @@
     <version>7</version>
     <groupId>org.sonatype.oss</groupId>
   </parent>
+  <groupId>co.mewf.humpty</groupId>
   <artifactId>humpty-bom</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>humpty-bom</name>
   <description>A Bill of Materials for the humpty pipeline and plugins</description>
+  <url>http://mewf.co/humpty</url>
+  <licenses>
+    <license>
+      <name>The MIT License</name>
+      <url>http://www.opensource.org/licenses/mit-license.php</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>moandji.ezana</id>
+      <name>Moandji Ezana</name>
+      <email>mwanji@gmail.com</email>
+      <roles>
+        <role>developer</role>
+      </roles>
+    </developer>
+  </developers>
+  <inceptionYear>2015</inceptionYear>
+  <properties>
+    <github.scm>scm:git:git@github.com:mwanji</github.scm>
+    <github.url>https://github.com/mwanji</github.url>
+  </properties>
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -39,5 +63,14 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
-  <groupId>co.mewf.humpty</groupId>
+  <scm>
+    <connection>${github.scm}/${project.artifactId}.git</connection>
+    <developerConnection>${github.scm}/${project.artifactId}.git</developerConnection>
+    <url>${github.url}/${project.artifactId}</url>
+    <tag>HEAD</tag>
+  </scm>
+  <issueManagement>
+    <system>Github Issues</system>
+    <url>${github.url}/${project.artifactId}/issues</url>
+  </issueManagement>
 </project>
