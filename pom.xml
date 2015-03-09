@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>co.mewf.humpty</groupId>
+    <artifactId>humpty-parent</artifactId>
+    <version>0.9.0</version>
+  </parent>
+  <artifactId>humpty-bom</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>humpty-bom</name>
+  <description>A Bill of Materials for the humpty pipeline and plugins</description>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>co.mewf.humpty</groupId>
+        <artifactId>humpty</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>co.mewf.humpty</groupId>
+        <artifactId>humpty-servlet</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>co.mewf.humpty</groupId>
+        <artifactId>humpty-maven-plugin</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>co.mewf.humpty</groupId>
+        <artifactId>humpty-less</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>co.mewf.humpty</groupId>
+        <artifactId>humpty-css</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+</project>
